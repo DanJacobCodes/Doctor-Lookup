@@ -1,17 +1,16 @@
 var Doctor = require('./../js/doctor.js').doctorModule;
 
-var medicalIssue = function(medicalIssue){
-  $('#findDoctor').append("Test " + medicalIssue + "." )
-};
+
+var displayMedicalIssue = function(medicalIssue) {
+  $(".findDoctor").text("Test" + medicalIssue);
+}
 
 
-
-
-$(document).ready(function(){
+$(document).ready(function() {
   var currentDoctorObject = new Doctor();
-  $('#issue-form').submit(function(){
-    event.preventDefault();
+  $('#issue-form').click(function() {
     var medicalIssue = $('#issue').val();
-    currentDoctorObject.getDoctors(medicalIssue, user_key);
+    $('#issue').val("");
+    currentDoctorObject.getDoctors(medicalIssue, displayMedicalIssue);
   });
 });
