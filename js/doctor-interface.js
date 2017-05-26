@@ -1,7 +1,9 @@
 var Doctor = require('./../js/doctor.js').doctorModule;
 
 var medicalIssue = function(medicalIssue){
+  $('#findDoctor').append("Test " + medicalIssue + "." )
 };
+
 
 
 
@@ -10,6 +12,6 @@ $(document).ready(function(){
   $('#issue-form').submit(function(){
     event.preventDefault();
     var medicalIssue = $('#issue').val();
-    currentDoctorObject.getDoctors(medicalIssue);
+    currentDoctorObject.getDoctors(medicalIssue, user_key);
   });
 });
