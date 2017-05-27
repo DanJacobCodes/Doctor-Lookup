@@ -1,7 +1,7 @@
 {
   "name": "doctor_lookup",
   "version": "1.0.0",
-  "description": "",
+  "description": "Epicodus JavaScript Project Week 1 || Modern JS Apps",
   "main": "gulpfile.js",
   "dependencies": {
     "bower-files": "^3.14.1",
