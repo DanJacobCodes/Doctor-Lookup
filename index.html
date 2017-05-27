@@ -1,18 +1,22 @@
 <html>
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
-    <!-- <link rel="stylesheet" href="build/css/styles.css"> -->
+    <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Doctor Lookup</title>
   </head>
   <body>
+    <div class="jumbotron">
+      <img src="img/download.png" alt="logo"  id="imglogo"/>
+      <h1 id ="jumbo">Doctor Lookup</h1>
+    </div>
     <div class="container">
       <form id="issue-form">
         <h1>Find a Doctor near you:</h1>
         <label for="issue">Describe your issue:</label>
         <input id="issue" type="text">
-        <button class="btn-success" type="submit">Go!</button>
+        <button class="btn btn-primary btn-lg" type="submit">Go!</button>
       </form>
     </div>
     <div id="style">

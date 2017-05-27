@@ -15,7 +15,7 @@ Doctor.prototype.getDoctors = function(medicalIssue) {
 
 
    .fail(function(error){
-      $("#findDoctor").text(error.responseJSON.message);
+      $("#findDoctor").text("Sorry no doctors in the area can assist you with that illness");
   });
 };
 
